@@ -264,7 +264,7 @@
             loadingText.style.display = 'block';
             resultSection.style.display = 'none';
 
-            fetch("", {
+            fetch("{% url 'upload_resume' %}", {
                 method: 'POST',
                 body: formData,
                 headers: {
